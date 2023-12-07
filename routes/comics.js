@@ -11,7 +11,7 @@ router.get("/comics", async (req, res) => {
     res.json(response.data);
   } catch (error) {
     console.log("erreur", error);
-    res.json({ message: "Erreur" });
+    res.json({ message: error.message });
   }
 });
 
