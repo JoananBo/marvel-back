@@ -18,6 +18,9 @@ app.use(comicsRoute);
 const characterIdRoute = require("./routes/characterId");
 app.use(characterIdRoute);
 
+const comicIdRoute = require("./routes/comicsid");
+app.use(comicIdRoute);
+
 //-----------ROUTE 404-----------------//
 
 app.all("*", (req, res) => {

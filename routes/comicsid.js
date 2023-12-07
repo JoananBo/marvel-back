@@ -9,7 +9,7 @@ router.get("/comic/:comicId", async (req, res) => {
     );
     console.log("Vous êtes sur la page comicsid");
   } catch (error) {
-    console.log("erreur=>", error);
+    console.log("erreur back=>", error);
     res.json({ message: error.message });
   }
 });
